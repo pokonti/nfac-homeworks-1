@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import styles from './QuoteBox.module.css';
 
 function QuoteBox() {
     const [quote, setQuote] = useState('');
@@ -35,13 +34,13 @@ function QuoteBox() {
     }, []);
 
     if (isLoading) {
-        return <p className={styles.loading}>Loading...</p>;
+        return <p>Loading...</p>;
     }
 
     return (
-        <div className={styles.quoteBox}>
-            <p className={styles.quote}>{quote}</p>
-            <p className={styles.author}>- {author}</p>
+        <div>
+            <p>{quote}</p>
+            <p>- {author}</p>
         </div>
     );
 }
