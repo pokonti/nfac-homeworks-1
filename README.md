@@ -3,6 +3,7 @@ A simple React-based breathing exercise app that guides users through inhale-hol
 
 ## API
 ```
+https://api.api-ninjas.com/v1/quotes
 ```
 
 ### Deploy
